@@ -12,7 +12,7 @@ public class WebConfig implements WebMvcConfigurer {
                 .addMapping("/api/**")
                 .allowedOrigins("https://bwpbur.csb.app", "null")
                 .allowedMethods("GET", "POST")
-                .allowedHeaders("Authorization")
+                .allowedHeaders("Authorization", "Accept", "Content-Type")
                 .allowCredentials(false)
                 .maxAge(3600);
     }
